@@ -1,0 +1,216 @@
+<html>
+    <head>
+    <style>
+    body { font-family: "Lato", sans-serif;}
+    .collapsible { background: none; color: #818181; cursor: pointer; padding: 6px 6px 6px 32px; width: 100%; text-align:
+    left; font-size: 16px; border: none;}
+    .collapsible:hover { color: white;}
+    .collapsible_expanded { color: #818181; }
+    .collapsible_content { padding-left: 15px; display: none; overflow: hidden;}
+    .sidenav { height: 100%; width: 20%; position: fixed; z-index: 1; top: 0; left: 0; text-align: left;
+     background-color: #111; overflow: auto; resize: none;  font-size: 16px;}
+    .sidenav a:hover { color: #f1f1f1;}
+    .link_not_selected { padding: 6px 6px 6px 32px; text-decoration: none; color: #818181; display: block;}
+    .link_selected {padding: 6px 6px 6px 32px; text-decoration: none; color: white; display: block;}    
+    .sidenav p { padding: 0px 0px 0px 12px; color: #818181; position: relative; bottom: 0}
+    .sidenav_open_button {background: none; cursor: pointer; border:none; font-size: 24px;}
+    .sidenav_close_button {background: none; color: white; cursor: pointer; width: 100%; text-align:
+    left; border:none; font-size: 30px; padding-top: 5px; padding-left: 15px}
+    .main { margin-left: 20%;, height: 100%}
+    </style>
+    </head>
+    <body>
+    
+    <div id="main" class="main">
+    <div>
+    <button id="openNav" class="sidenav_open_button" onclick="sidenav_open()" style="display:none">&#9776;</button>
+    </div>
+    <iframe name="targetFrame" src="src\homepage.html" allowTransparency="true" frameborder="0" width="100%" height="98%">
+    </iframe>
+    </div>
+    
+    <div id="sidenav" class="sidenav">
+    <button class="sidenav_close_button" onclick="sidenav_close()">&times;</button>
+    <a class="link_not_selected" href="http://robotframework.org/robotframework/" target="targetFrame">Robot Framework Documentation
+    </a>
+    <hr>
+    <button class="collapsible">Keywords</button>
+        <div class="collapsible_content">
+        <a class="link_not_selected" href="src\Keywords\generator.html" target="targetFrame">generator</a>
+            <a class="link_not_selected" href="src\Keywords\Browser.html" target="targetFrame">Browser</a>
+            <button class="collapsible">Libs</button>
+        <div class="collapsible_content">
+        <button class="collapsible">BatchFlow</button>
+        <div class="collapsible_content">
+        <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BrowserKeywords.html" target="targetFrame">BrowserKeywords</a>
+            <button class="collapsible">r1</button>
+        <div class="collapsible_content">
+        <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Priority.html" target="targetFrame">Node_Priority</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Diagram_Shedule.html" target="targetFrame">Diagram_Shedule</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\13_Вычисляемые_элементы.html" target="targetFrame">13_Вычисляемые_элементы</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\14_Узел__Исключение_.html" target="targetFrame">14_Узел__Исключение_</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Split.html" target="targetFrame">Node_Split</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Export.html" target="targetFrame">Node_Export</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Filter.html" target="targetFrame">Node_Filter</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Cross.html" target="targetFrame">Node_Cross</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_CustomCode.html" target="targetFrame">Node_CustomCode</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Limit.html" target="targetFrame">Node_Limit</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Communication.html" target="targetFrame">Node_Communication</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Subdiagram.html" target="targetFrame">Node_Subdiagram</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Offer.html" target="targetFrame">Node_Offer</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_GoTo.html" target="targetFrame">Node_GoTo</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Join.html" target="targetFrame">Node_Join</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Diagram_LaunchModes.html" target="targetFrame">Diagram_LaunchModes</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Node_Wait.html" target="targetFrame">Node_Wait</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\Diagram_ExportImport.html" target="targetFrame">Diagram_ExportImport</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\r1\pre-conditions.html" target="targetFrame">pre-conditions</a>
+            </div>
+    <button class="collapsible">BatchFlowApi</button>
+        <div class="collapsible_content">
+        <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagrams.html" target="targetFrame">getDiagrams</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createDiagram.html" target="targetFrame">createDiagram</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramHeader.html" target="targetFrame">getDiagramHeader</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramLatest.html" target="targetFrame">getDiagramLatest</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\putDiagram.html" target="targetFrame">putDiagram</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\patchDiagram.html" target="targetFrame">patchDiagram</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeDiagram.html" target="targetFrame">removeDiagram</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\changeDiagramState.html" target="targetFrame">changeDiagramState</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramVersion.html" target="targetFrame">getDiagramVersion</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeDiagramVersion.html" target="targetFrame">removeDiagramVersion</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramNodes.html" target="targetFrame">getDiagramNodes</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramNode.html" target="targetFrame">getDiagramNode</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDataEntities.html" target="targetFrame">getDataEntities</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDataEntityLinks.html" target="targetFrame">getDataEntityLinks</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDataEntityAssociations.html" target="targetFrame">getDataEntityAssociations</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDataItems.html" target="targetFrame">getDataItems</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramDataEntities.html" target="targetFrame">getDiagramDataEntities</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramDataEntityLinks.html" target="targetFrame">getDiagramDataEntityLinks</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramDataItems.html" target="targetFrame">getDiagramDataItems</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createDiagramDataItem.html" target="targetFrame">createDiagramDataItem</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\validateDiagramDataItem.html" target="targetFrame">validateDiagramDataItem</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramDataItem.html" target="targetFrame">getDiagramDataItem</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\putDiagramDataItem.html" target="targetFrame">putDiagramDataItem</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeDiagramDataItem.html" target="targetFrame">removeDiagramDataItem</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getDiagramResults.html" target="targetFrame">getDiagramResults</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\putResult.html" target="targetFrame">putResult</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\clearResult.html" target="targetFrame">clearResult</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getRuns.html" target="targetFrame">getRuns</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createRun.html" target="targetFrame">createRun</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getRun.html" target="targetFrame">getRun</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\updateRunStatus.html" target="targetFrame">updateRunStatus</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getRunResults.html" target="targetFrame">getRunResults</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\executeNode.html" target="targetFrame">executeNode</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getSelectExecution.html" target="targetFrame">getSelectExecution</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createCengine.html" target="targetFrame">createCengine</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getCengines.html" target="targetFrame">getCengines</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getCengine.html" target="targetFrame">getCengine</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\putCengine.html" target="targetFrame">putCengine</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeCengine.html" target="targetFrame">removeCengine</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createCscript.html" target="targetFrame">createCscript</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getCscripts.html" target="targetFrame">getCscripts</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getCscript.html" target="targetFrame">getCscript</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\putCscript.html" target="targetFrame">putCscript</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeCscript.html" target="targetFrame">removeCscript</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createCform.html" target="targetFrame">createCform</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getCforms.html" target="targetFrame">getCforms</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getCform.html" target="targetFrame">getCform</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\putCform.html" target="targetFrame">putCform</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeCform.html" target="targetFrame">removeCform</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createRdDomain.html" target="targetFrame">createRdDomain</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getRdDomains.html" target="targetFrame">getRdDomains</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getRdDomain.html" target="targetFrame">getRdDomain</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\putRdDomain.html" target="targetFrame">putRdDomain</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeRdDomain.html" target="targetFrame">removeRdDomain</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createRdContent.html" target="targetFrame">createRdContent</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getRdContentCurrent.html" target="targetFrame">getRdContentCurrent</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getRdContent.html" target="targetFrame">getRdContent</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\updateRdContent.html" target="targetFrame">updateRdContent</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\deleteRdContent.html" target="targetFrame">deleteRdContent</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createSchedule.html" target="targetFrame">createSchedule</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getSchedules.html" target="targetFrame">getSchedules</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getSchedule.html" target="targetFrame">getSchedule</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\updateSchedule.html" target="targetFrame">updateSchedule</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removeSchedule.html" target="targetFrame">removeSchedule</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\updateScheduleState.html" target="targetFrame">updateScheduleState</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getSegments.html" target="targetFrame">getSegments</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getSegment.html" target="targetFrame">getSegment</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\createPackage.html" target="targetFrame">createPackage</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getPackage.html" target="targetFrame">getPackage</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\removePackage.html" target="targetFrame">removePackage</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\validatePackage.html" target="targetFrame">validatePackage</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\importPackage.html" target="targetFrame">importPackage</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowApi\getUserInfo.html" target="targetFrame">getUserInfo</a>
+            </div>
+    <a class="link_not_selected" href="src\Keywords\Libs\BatchFlow\BatchFlowAPILibrary.html" target="targetFrame">BatchFlowAPILibrary</a>
+            </div>
+    <button class="collapsible">Decision</button>
+        <div class="collapsible_content">
+        <a class="link_not_selected" href="src\Keywords\Libs\Decision\DecisionAPI.html" target="targetFrame">DecisionAPI</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\Decision\ClickKeywords.html" target="targetFrame">ClickKeywords</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\Decision\DecisionE2ELibrary.html" target="targetFrame">DecisionE2ELibrary</a>
+            <a class="link_not_selected" href="src\Keywords\Libs\Decision\DecisionAPILibrary.html" target="targetFrame">DecisionAPILibrary</a>
+            </div>
+    </div>
+    <a class="link_not_selected" href="src\Keywords\VariablesLib.html" target="targetFrame">VariablesLib</a>
+            <a class="link_not_selected" href="src\Keywords\JSONLibrary.html" target="targetFrame">JSONLibrary</a>
+            <a class="link_not_selected" href="src\Keywords\RequestsLibrary.html" target="targetFrame">RequestsLibrary</a>
+            <a class="link_not_selected" href="src\Keywords\Collections.html" target="targetFrame">Collections</a>
+            </div>
+    
+    <hr>
+    <p>
+    Created: 10.04.2024 15:21:40
+    </p>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++)
+        {
+            coll[i].addEventListener("click", function()
+            {
+                this.classList.toggle("collapsible_expanded");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block")
+                {
+                    content.style.display = "none";
+                }
+                else
+                {
+                    content.style.display = "block";
+                }
+            });
+        }
+        
+        var leaf_links = document.getElementsByClassName("link_not_selected");
+        var i;
+        for (i = 0; i < leaf_links.length; i++)
+        {
+            leaf_links[i].addEventListener("click", function()
+            {                
+                var active_leaf_links = document.getElementsByClassName("link_selected");
+                var j;
+                for (j=0; j < active_leaf_links.length; j++)
+                {
+                    active_leaf_links[j].className = "link_not_selected";
+                }                
+                this.className = "link_selected";                             
+            });
+        }
+        
+        function sidenav_open()
+        {
+            document.getElementById("main").style.marginLeft = "20%";
+            document.getElementById("sidenav").style.width = "20%";
+            document.getElementById("sidenav").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function sidenav_close()
+        {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("sidenav").style.display = "none";
+            document.getElementById("openNav").style.display = "inline";
+        }
+    </script>
+    </body>
+</html>
